@@ -1,16 +1,17 @@
-#from django.http import HttpResponse <-- I don't need this because of "render"
+
+from django.http import HttpResponse
+#I don't need this because of "render"?
 
 from django.shortcuts import render
 #render(request, template_name[, dictionary][, context_instance][, content_type][, status][, current_app][, dirs])[source]
-#Combines a given template with a given context dictionary and
-#returns an HttpResponse object with that rendered text.
+#Combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text.
 
 from questions.models import Question
 
 #the code below is from the index/detail portion of the polls app
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('polls/index.html')
+    template = loader.get_template('questions/index.html')
     context = RequestContext(request, {
         'latest_question_list': latest_question_list,
     })
