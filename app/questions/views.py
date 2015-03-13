@@ -1,6 +1,6 @@
 
 from django.http import HttpResponse
-#I don't need this because of "render"?
+#I don't think I need this because of "render()"
 
 from django.shortcuts import render
 #render(request, template_name[, dictionary][, context_instance][, content_type][, status][, current_app][, dirs])[source]
