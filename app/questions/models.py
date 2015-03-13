@@ -13,7 +13,6 @@ class Comment(models.Model):
     comment_text = models.CharField(max_length=200)
     question = models.ForeignKey(Question) #many-to-one relationship
     
-    #go back and find a question.
-    #Don't ask the question which comment it's related to
-    #ask the comment to what question it belongs
-    #'question' is a field in "Comment"
+#go back and find a question.
+#Don't ask the question which comment it's related to, ask the comment to what question it belongs.
+#'question' is a field in "Comment"
