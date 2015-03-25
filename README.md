@@ -2,7 +2,9 @@
 
 #SOCIAL JUSTICE QUESTIONS
 #1. In what ways can you more effectively build solidarity across identity categories?
+
 #2. What is the difference between equity and equality?
+
 #3. In what ways are you acclimated to your privilege? how does it impact your life In ways that you usually don't notice?
 
 app/ #container for project
